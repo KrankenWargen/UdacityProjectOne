@@ -14,7 +14,7 @@
             app:destination="@id/welcomeFragment"
             app:enterAnim="@anim/slide_in_right"
             app:popEnterAnim="@anim/slide_out_right"
-            app:popUpTo="@id/loginFragment2"
+            app:popUpTo="@id/navigation"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -38,7 +38,7 @@
             app:destination="@id/shoeListFragment"
             app:enterAnim="@anim/slide_in_right"
             app:popEnterAnim="@anim/slide_out_right"
-            app:popUpTo="@id/loginFragment2"
+            app:popUpTo="@id/navigation"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -64,7 +64,7 @@
             app:enterAnim="@anim/slide_in_right"
             app:launchSingleTop="false"
             app:popEnterAnim="@anim/slide_out_right"
-            app:popUpTo="@id/loginFragment2"
+            app:popUpTo="@id/navigation"
             app:popUpToInclusive="true" />
     </fragment>
 </navigation>

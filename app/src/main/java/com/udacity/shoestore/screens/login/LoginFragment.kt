@@ -28,12 +28,10 @@ class LoginFragment : Fragment() {
             it.findNavController()
                 .navigate(LoginFragmentDirections.actionLoginFragment2ToWelcomeFragment())
         }
+        setHasOptionsMenu(true)
         return binding.root
     }
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
-    }
+
     override fun onPrepareOptionsMenu(menu: Menu) {
         super.onPrepareOptionsMenu(menu)
         menu.clear()

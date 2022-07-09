@@ -1,79 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screens.shoeList.ShoeListFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment">
 
-        <LinearLayout
-            android:id="@+id/shoe_container"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_shoe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_add"
+            android:text="@string/add_a_new_shoe" />
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:text="@string/hello_blank_fragment">
 
-            <Button
-                android:id="@+id/add_shoe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:text="@string/add_a_new_shoe" />
-
-            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
-                android:id="@+id/simpleTableLayout"
+            <LinearLayout
+                android:id="@+id/shoe_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:stretchColumns="*"
-                android:shrinkColumns="*">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <!-- first row of the table layout-->
-                <TableRow
 
-                    android:id="@+id/firstRow"
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                    android:id="@+id/simpleTableLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <!-- first element of the row-->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="18dip"
-                        android:text="Shoe name"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="18dip"
-                        android:text="Shoe company"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
+                    <!-- first row of the table layout-->
+                    <TableRow
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="18dip"
-                        android:text="shoe size"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
+                        android:id="@+id/firstRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Shoe name"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="18dip"
-                        android:text="Description"
-                        android:textColor="#000"
-                        android:textSize="12dp" />
-                </TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Shoe company"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
 
-            </TableLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="shoe size"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Description"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:id="@+id/secondtRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Nike"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Nike"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="42.5"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Elastic, Light weight"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:id="@+id/thirdRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Tarantino"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Adidas"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="40"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="18dip"
+                            android:text="Camping,hiking"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+                    </TableRow>
+                </TableLayout>
 
 
-        </LinearLayout>
-    </ScrollView>
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </layout>

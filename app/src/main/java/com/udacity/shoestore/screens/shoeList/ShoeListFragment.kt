@@ -31,7 +31,6 @@ class ShoeListFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentShoeListBinding>(
             inflater, R.layout.fragment_shoe_list, container, false
         )
-
         val tl = binding.simpleTableLayout
 /* Create a new row to be added. */
         viewModel.shoes.observe(viewLifecycleOwner, { shoes ->
@@ -65,7 +64,6 @@ class ShoeListFragment : Fragment() {
             }
 
         })
-
 
 
 
