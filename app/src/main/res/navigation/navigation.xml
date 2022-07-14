@@ -12,8 +12,8 @@
         <action
             android:id="@+id/action_loginFragment2_to_welcomeFragment"
             app:destination="@id/welcomeFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popEnterAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/enter_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
             app:popUpTo="@id/navigation"
             app:popUpToInclusive="true" />
     </fragment>
@@ -25,8 +25,8 @@
         <action
             android:id="@+id/action_welcomeFragment_to_instructionFragment3"
             app:destination="@id/instructionFragment3"
-            app:enterAnim="@anim/slide_in_right"
-            app:popEnterAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/enter_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
             app:popUpTo="@id/welcomeFragment" />
     </fragment>
     <fragment
@@ -36,8 +36,8 @@
         <action
             android:id="@+id/action_instructionFragment3_to_shoeListFragment"
             app:destination="@id/shoeListFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popEnterAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/enter_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
             app:popUpTo="@id/navigation"
             app:popUpToInclusive="true" />
     </fragment>
@@ -49,8 +49,9 @@
         <action
             android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
             app:destination="@id/shoeDetailFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:popEnterAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/pop_enter_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
             app:popUpTo="@id/shoeListFragment" />
     </fragment>
     <fragment
@@ -61,9 +62,9 @@
         <action
             android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"
             app:destination="@id/shoeListFragment"
-            app:enterAnim="@anim/slide_in_right"
+            app:enterAnim="@anim/enter_anim"
             app:launchSingleTop="false"
-            app:popEnterAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/pop_enter_anim"
             app:popUpTo="@id/navigation"
             app:popUpToInclusive="true" />
     </fragment>

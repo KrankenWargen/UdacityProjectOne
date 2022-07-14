@@ -4,6 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.welcome.WelcomeFragment">
 
+    <!--    the usage of the constarintlayout is to align the views vertically.
+ a linearlayout could do the same job but a constraint layout is more optimal
+ in smaller views-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

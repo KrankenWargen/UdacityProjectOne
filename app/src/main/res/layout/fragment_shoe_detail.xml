@@ -4,6 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.shoeDetails.ShoeDetailFragment">
 
+    <data>
+
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+    <!--    the usage of the constarintlayout is to align the labels along with the
+    edittext. and place the buttons horizontally-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -14,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:text="Shoe name"
+
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -46,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="10"
+            android:text="@={shoe.name}"
             app:layout_constraintStart_toEndOf="@id/shoe_name"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="10"
+            android:text="@={shoe.company}"
             app:layout_constraintStart_toEndOf="@id/shoe_company"
             app:layout_constraintTop_toBottomOf="@id/shoe_name" />
 
@@ -63,7 +74,9 @@
             style="@style/editableTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:digits="0123456789-."
             android:maxLength="4"
+            android:text="@={shoe.size}"
             app:layout_constraintStart_toEndOf="@id/shoe_size"
             app:layout_constraintTop_toBottomOf="@id/shoe_company" />
 
@@ -73,6 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="20"
+            android:text="@={shoe.description}"
             app:layout_constraintStart_toEndOf="@id/shoe_description"
             app:layout_constraintTop_toBottomOf="@id/shoe_size" />
 

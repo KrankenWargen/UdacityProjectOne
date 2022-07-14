@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mahmo/UdacityApps/PorjectOneShoeListings/app/src/main/res/layout/activity_main.xml" value="0.1675925925925926" />
+        <entry key="..\:/Users/mahmo/UdacityApps/PorjectOneShoeListings/app/src/main/res/layout/fragment_instruction.xml" value="0.26944444444444443" />
+        <entry key="..\:/Users/mahmo/UdacityApps/PorjectOneShoeListings/app/src/main/res/layout/fragment_login.xml" value="0.3625" />
+        <entry key="..\:/Users/mahmo/UdacityApps/PorjectOneShoeListings/app/src/main/res/layout/fragment_shoe_detail.xml" value="0.1" />
+        <entry key="..\:/Users/mahmo/UdacityApps/PorjectOneShoeListings/app/src/main/res/layout/fragment_shoe_list.xml" value="0.3625" />
+        <entry key="..\:/Users/mahmo/UdacityApps/PorjectOneShoeListings/app/src/main/res/layout/fragment_welcome.xml" value="0.3625" />
         <entry key="..\:/Users/mahmo/UdacityApps/nd940-android-kotlin-course1-starter/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/mahmo/UdacityApps/nd940-android-kotlin-course1-starter/app/src/main/res/layout/fragment_blank.xml" value="0.3484375" />
         <entry key="..\:/Users/mahmo/UdacityApps/nd940-android-kotlin-course1-starter/app/src/main/res/layout/fragment_instruction.xml" value="0.33" />
